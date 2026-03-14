@@ -1,0 +1,14 @@
+name: .clinerules
+description: Configuration file for Cline AI coding assistant providing project-specific
+  rules, coding conventions, and behavioral instructions.
+url: ''
+tags:
+- AI Agents
+- Cline
+- Developer Workflow
+- Coding Standards
+- AI Copilot
+created: '2025'
+modified: '2025'
+apis: []
+common: []

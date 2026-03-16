@@ -1,14 +1,29 @@
+aid: clinerules
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/clinerules/refs/heads/main/apis.yml
 name: .clinerules
-description: Configuration file for Cline AI coding assistant providing project-specific
-  rules, coding conventions, and behavioral instructions.
-url: ''
 tags:
-- AI Agents
-- Cline
-- Developer Workflow
-- Coding Standards
-- AI Copilot
-created: '2025'
-modified: '2025'
+  - AI Agents
+  - Cline
+  - Developer Workflow
+  - Coding Standards
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+created: '2025-01-01'
+modified: '2026-03-16'
+position: Consumer
+description: >-
+  .clinerules is a configuration file for the Cline AI coding assistant
+  providing project-specific rules, coding conventions, and behavioral
+  instructions.
 apis: []
-common: []
+common:
+  - type: Website
+    url: https://github.com/cline/cline
+  - type: Documentation
+    url: https://github.com/cline/cline/blob/main/docs/clinerules.md
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+specificationVersion: '0.19'

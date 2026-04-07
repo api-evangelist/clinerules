@@ -1,7 +1,7 @@
 aid: clinerules
 url: >-
   https://raw.githubusercontent.com/api-evangelist/clinerules/refs/heads/main/apis.yml
-name: .clinerules
+name: .Clinerules
 tags:
   - AI Agents
   - Cline

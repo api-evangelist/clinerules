@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cline/cline/schemas/clinerules-rule.json",
+  "title": "Cline Rule File",
+  "description": "Schema for an individual rule file inside a project's .clinerules/ directory. A rule file is a Markdown or text document that provides Cline (the AI coding agent) with persistent instructions, coding conventions, architectural notes, or constraints. Files may contain optional YAML frontmatter that scopes the rule to specific globs so that the rule is only loaded when the active task touches matching files.",
+  "type": "object",
+  "properties": {
+    "frontmatter": {
+      "type": "object",
+      "description": "Optional YAML frontmatter at the top of a rule file. Used by Cline to conditionally activate rules.",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Short human-readable description of what the rule covers."
+        },
+        "paths": {
+          "type": "array",
+          "description": "Glob patterns for which the rule should be activated. When present, the rule is only loaded when files matching one of these globs are part of the current task.",
+          "items": {"type": "string"}
+        },
+        "globs": {
+          "type": "array",
+          "description": "Alias for paths. Glob patterns for files to which the rule applies.",
+          "items": {"type": "string"}
+        },
+        "alwaysApply": {
+          "type": "boolean",
+          "description": "If true, the rule is included on every task regardless of file context.",
+          "default": false
+        },
+        "tags": {
+          "type": "array",
+          "description": "Optional categorization tags for the rule.",
+          "items": {"type": "string"}
+        }
+      },
+      "additionalProperties": true
+    },
+    "body": {
+      "type": "string",
+      "description": "Markdown or plain-text content of the rule. This is the actual instruction text presented to the agent."
+    }
+  },
+  "required": ["body"],
+  "additionalProperties": true
+}

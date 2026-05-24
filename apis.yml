@@ -38,6 +38,8 @@ common:
     url: json-schema/clinerules-rule-schema.json
   - type: JSONLDContext
     url: json-ld/clinerules-context.jsonld
+  - type: LLMsTxt
+    url: https://docs.cline.bot/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

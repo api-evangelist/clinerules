@@ -39,6 +39,19 @@ description: >-
   decisions, and behavioural constraints for AI coding agents.
 apis: []
 common:
+  - type: IssueTracker
+    url: https://github.com/cline/cline/issues
+  - type: Releases
+    url: https://github.com/cline/cline/releases
+  - type: SecurityPolicy
+    url: https://github.com/cline/cline/blob/main/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/cline/cline/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/cline/cline/blob/main/CONTRIBUTING.md
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/cline/cline/blob/main/LICENSE
   - type: VulnerabilityDisclosure
     url: security/clinerules-vulnerability-disclosure.yml
   - type: DomainSecurity

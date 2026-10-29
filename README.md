@@ -1,4 +1,4 @@
-# .clinerules (clinerules)
+# .clinerules
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,35 +64,63 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-.clinerules is the rule-file convention used by the Cline open-source AI coding agent. Projects expose persistent guidance to Cline by placing a `.clinerules/` directory at the repository root containing one or more Markdown or text files, each able to declare optional YAML frontmatter that scopes the rule to glob patterns. The format is interoperable with AGENTS.md, .cursorrules, and .windsurfrules conventions, providing a cross-tool standard for codifying coding conventions, architectural decisions, and behavioural constraints for AI coding agents.
+.clinerules is the rule-file convention used by the Cline open-source AI coding agent. Projects expose persistent guidance to Cline by placing a .clinerules/ directory at the repository root containing one or more Markdown or text files. Each file may declare optional YAML frontmatter to scope its instructions to glob patterns so the agent only loads context relevant to the active task. The format is interoperable with AGENTS.md, .cursorrules, and .windsurfrules conventions, providing a cross-tool standard for codifying coding conventions, architectural decisions, and behavioural constraints for AI coding agents.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/clinerules/refs/heads/main/apis.yml)
+**Areas:** AI Agents · Cline · Coding Standards · Configuration · Developer Workflow · Prompt Engineering
 
-## Scope
+## .clinerules on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** Public
+Everything profiled for .clinerules is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/clinerules/](https://apis.io/providers/clinerules/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- AI Agents, Cline, Coding Standards, Configuration, Developer Workflow, Prompt Engineering
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### JSON Schema (1)
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-04-27
+The data models the API reads and writes.
 
-## Common Properties
+- [Cline Rule File](https://apis.io/schemas/clinerules/clinerules-rule/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Clinerules Context](https://apis.io/jsonld/clinerules/clinerules-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [.clinerules — jsonschema rules](https://apis.io/rules/clinerules/clinerules-jsonschema-spectral-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Clinerules Domain Security](https://apis.io/security/clinerules/clinerules-domain-security/)
+- [Clinerules Vulnerability Disclosure](https://apis.io/security/clinerules/clinerules-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://cline.bot)
 - [Documentation](https://docs.cline.bot/features/cline-rules)
-- [GitHub Repository](https://github.com/cline/cline)
-- [JSON Schema](json-schema/clinerules-rule-schema.json)
-- [JSON-LD Context](json-ld/clinerules-context.jsonld)
+- [Blog](https://cline.bot/blog)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+Not yet rated. See [apis.io/providers/clinerules/](https://apis.io/providers/clinerules/).
 
-**Email:** kin@apievangelist.com
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for .clinerules: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/clinerules/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
